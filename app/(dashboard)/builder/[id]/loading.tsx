@@ -1,7 +1,12 @@
-import React, { ReactNode } from "react";
+import React from "react";
+import { ImSpinner2 } from "react-icons/im";
 
-function layout({ children }: { children: ReactNode }) {
-  return <div className="flex w-full flex-grow mx-auto">{children}</div>;
+function Loading() {
+  return (
+    <div className="flex items-center justify-center w-full h-full">
+      <ImSpinner2 className="animate-spin h-12 w-12" />
+    </div>
+  );
 }
 
-export default layout;
+export default Loading;
